@@ -1,5 +1,8 @@
 <div class="service service-summary">
   <div class="service-content">
+    <div class="service-icon">
+      <img src="{{ .Params.icon | relURL }}" />
+    </div>
     <h2 class="service-title">
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h2>
