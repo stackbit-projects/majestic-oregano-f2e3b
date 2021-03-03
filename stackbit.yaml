@@ -8,7 +8,8 @@ staticDir: static
 pagesDir: content
 dataDir: data
 pageLayoutKey: model
-
+logicFields:
+  - config.params.team.summary_large_truncate
 models:
   config:
     type: config
