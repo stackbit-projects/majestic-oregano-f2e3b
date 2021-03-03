@@ -10,6 +10,7 @@ dataDir: data
 pageLayoutKey: model
 logicFields:
   - config.params.team.summary_large_truncate
+  - service.weight
 models:
   config:
     type: config
