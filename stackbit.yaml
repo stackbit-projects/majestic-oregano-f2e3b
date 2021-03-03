@@ -7,7 +7,7 @@ uploadDir: images
 staticDir: static
 pagesDir: content
 dataDir: data
-pageLayoutKey: model
+pageLayoutKey: null
 logicFields:
   - config.params.team.summary_large_truncate
   - service.weight
@@ -187,7 +187,6 @@ models:
     file: _index.md
     hideContent: false
     singleInstance: true
-    layout: home
     fields:
       - type: string
         name: title
@@ -212,7 +211,6 @@ models:
     file: 404/_index.md
     hideContent: true
     singleInstance: true
-    layout: pagenotfound
     fields:
       - type: string
         name: title
@@ -223,32 +221,6 @@ models:
     label: Basic Page
     match: '*.md'
     exclude: _index.md
-    layout: basicpage
-    fields:
-      - type: string
-        name: title
-        label: Title
-        description: The title of the page.
-      - type: date
-        name: date
-        label: Date
-      - type: string
-        name: layout
-        label: layout
-      - type: enum
-        name: menu
-        label: Menu
-        options:
-          - label: Main Menu
-            value: main
-          - label: Footer Menu
-            value: footer
-  contact:
-    type: page
-    label: Contact Page
-    file: 'contact.md'
-    singleInstance: true
-    layout: contact
     fields:
       - type: string
         name: title
@@ -272,8 +244,6 @@ models:
     type: page
     label: Service
     folder: services
-    exclude: _index.md
-    layout: service
     fields:
       - type: string
         name: title
@@ -295,7 +265,6 @@ models:
     label: Services Overview
     file: services/_index.md
     singleInstance: true
-    layout: services
     fields:
       - type: string
         name: title
@@ -318,8 +287,6 @@ models:
     type: page
     label: Team
     folder: team
-    exclude: _index.md
-    layout: team
     fields:
       - type: string
         name: title
@@ -356,7 +323,6 @@ models:
     label: Team Overview
     file: team/_index.md
     singleInstance: true
-    layout: teams
     fields:
       - type: string
         name: title
