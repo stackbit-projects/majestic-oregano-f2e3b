@@ -10,6 +10,7 @@ dataDir: data
 pageLayoutKey: null
 logicFields:
   - config.params.team.summary_large_truncate
+  - config.params.baseURL
   - service.weight
 models:
   config:
